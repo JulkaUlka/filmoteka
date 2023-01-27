@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmoteka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+    <link rel="shortcut icon" href="/favicon.824cf0c5.ico">
+  </head>
+  <body class="loaded">
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <nav class="header__site-nav">
+        <a href="/index.html" class="header__logo">
+          <svg class="header__icon">
+            <use href="/icons.adfc4680.svg#icon-film"></use>
+          </svg>
+          <span class="header__name">Filmoteka</span>
+        </a>
+
+        <ul class="header__navigation navigation">
+          <li class="navigation__item">
+            <a class="navigation__link current-link" href="/index.html">home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/my-library.html">my library</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="search__wrapper">
+        <input type="text" name="search-box" class="search" placeholder="Movie search">
+        <svg class="search__icon">
+          <use href="/icons.adfc4680.svg#icon-search-2"></use>
+        </svg>
+      </div>
+      <p class="search__warning"></p>
+    </div>
+    <input id="toggle" class="toggle" type="checkbox">
+  </div>
+</header>
+<button type="button" aria-label="Go to the top" class="page-up-btn">
+  &#8679;
+</button>
+
+    <main>
+  <section class="content">
+    <div class="container">
+      <ul class="films-list js-film-modal-open"></ul>
+      <div id="tui-pagination-container" class="tui-pagination"></div>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+  <div class="container">
+    <p class="footer__text">
+      © 2023 | All Rights Reserved | Developed with
+      <svg class="footer__heart">
+        <use href="/icons.adfc4680.svg#icon-heart"></use>
+      </svg>
+      <a href="#" class="js-team-modal">by GoIT <span class="student-link">Students</span></a>
+    </p>
+  </div>
+</footer>
+<div class="film-trailer-backdrop is-hidden">
+  <div class="film-trailer"></div>
+</div>
+
+    <div class="film-modal-backdrop is-hidden">
+  <div class="film-modal">
+    <button type="button" class="film-modal-close">
+      <svg class="film-modal-close-icon" width="30" height="30">
+        <use href="/icons.adfc4680.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="film-modal-wrap">
+      <!-- <div class="film-modal-img">
+        <img src="./images/film-modal/poster.jpg" alt="film poster" />
+      </div>
+      <div class="film-modal-info">
+        <h2 class="film-modal-title">A firstful of lead</h2>
+        <ul class="film-modal-stats">
+          <li class="film-modal-stats-row">
+            <p class="film-modal-stats-name">Vote / Votes</p>
+            <p class="film-modal-stats-value">
+              <span>7.3</span> / <span>1260</span>
+            </p>
+          </li>
+          <li class="film-modal-stats-row">
+            <p class="film-modal-stats-name">Popularity</p>
+            <p class="film-modal-stats-value">100.2</p>
+          </li>
+          <li class="film-modal-stats-row">
+            <p class="film-modal-stats-name">Original Title</p>
+            <p class="film-modal-stats-value upper">A firstful of lead</p>
+          </li>
+          <li class="film-modal-stats-row">
+            <p class="film-modal-stats-name">Genre</p>
+            <p class="film-modal-stats-value">Western</p>
+          </li>
+        </ul>
+        <div class="film-modal-description">
+          <p class="upper">about</p>
+          <p class="film-modal-description-text">
+            Four of the West’s most infamous outlaws assemble to steal a huge
+            stash of gold from the most corrupt settlement of the gold rush
+            towns. But not all goes to plan one is killed and the other three
+            escapes with bags of gold hide out in the abandoned gold mine where
+            they happen across another gang of three – who themselves were
+            planning to hit the very same bank! As tensions rise, things go from
+            bad to worse as they realise the bags of gold are filled with
+            lead... they’ve been double crossed – but by who and how?
+          </p>
+        </div>
+        <div class="film-modal-actions">
+          <button type="submit" class="film-modal-btn-action accent">
+            add to Watched
+          </button>
+          <button type="submit" class="film-modal-btn-action transparent">
+            add to queue
+          </button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+    <!-- <include src="./partials/preloader.html"></include> -->
+    <!-- <body class="loaded"> -->
+
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
+
+<!-- <div style="text-align: center">
+  <button class="js-nloader" type="button">Кнопка</button>
+</div> -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+
+    <!-- scripts -->
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </body>
+</html>
